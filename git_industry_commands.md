@@ -77,12 +77,293 @@ git config --global --unset user.name
 
 - **Screenshot**
 
-<img width="1103" height="385" alt="Screenshot from 2026-03-10 14-59-43" src="https://github.com/user-attachments/assets/98606fa2-fb6d-44ed-b0a0-a7107ab2d2fb" />
-# Repository setup commands
-(i) git init
-  ->Used to initialize a git repository in a local folder
-  ->Syntax: git init
-(ii) git clone
-   ->Used to clone a existing repository in the local folder
-   ->Syntax:git clone "repo url"
-(iii)git 
+![Git Demo Screenshot](https://github.com/user-attachments/assets/98606fa2-fb6d-44ed-b0a0-a7107ab2d2fb)
+---
+## Repository Setup Commands
+
+## 1. git init
+**Purpose:**  
+Initializes a new Git repository in a local folder.
+
+### Syntax
+```bash
+git init
+```
+
+### Example
+```bash
+git init
+```
+
+---
+
+## 2. git clone
+**Purpose:**  
+Clones an existing repository into the local system.
+
+### Syntax
+```bash
+git clone <repository_url>
+```
+
+### Example
+```bash
+git clone https://github.com/Brahmaji-279/Git_demo.git
+```
+
+---
+
+## 3. git clone --branch
+**Purpose:**  
+Clones a specific branch instead of the default branch.
+
+### Syntax
+```bash
+git clone --branch <branch_name> <repository_url>
+```
+
+### Example
+```bash
+git clone --branch first_branch https://github.com/Brahmaji-279/Git_demo.git
+```
+
+---
+
+## 4. git clone --depth
+**Purpose:**  
+Creates a shallow clone with limited repository history. Useful when the repository is large.
+
+### Syntax
+```bash
+git clone --depth <number> <repository_url>
+```
+
+### Example
+```bash
+git clone --depth 1 https://github.com/Brahmaji-279/Git_demo.git
+```
+
+---
+
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/16e9ab36-6c44-4ca7-9492-84008786e927)
+
+
+#Repository Status & Inspection
+## 1. git status
+**Purpose:**
+Used to check the status of the git repository we created.
+### Syntax
+```bash
+git status
+```
+### Example
+```bash
+git status
+```
+## 2. git log
+**Purpose:**
+To check the history of commited changes within a git repository.
+### Syntax
+```bash
+git log
+```
+### Example
+```bash
+git log
+```
+## 3. git log --oneline
+**Purpose:**
+Used to display the commit history in a compact format
+### Syntax
+```bash
+git log --oneline
+```
+### Example
+```bash
+git log -oneline
+```
+## 4. git log --graph
+**Purpose:**
+Used to visualize the branching and merging structure of the repostitory.
+### Syntax
+```bash
+git log --graph
+```
+### Example
+```bash
+git log --graph
+```
+## 5.git show
+**Purpose:**
+ Used to shows the fil of the repository
+ ### Syntax
+ ```bash
+git show
+```
+### Example 
+```bash
+git show
+```
+## 6.git diff 
+**Purpose:**
+used to display the differences between two versions of files within a repository
+### Syntax
+```bash
+git diff
+```
+---
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/6e4e646f-6a2e-473a-bf21-9c79f6a8117d)
+
+## git diff --staged
+**Purpose:**  
+Shows the differences between the staged files and the last commit.
+
+### Syntax
+```bash
+git diff --staged
+```
+
+### Example
+```bash
+git add file1.txt
+git diff --staged
+```
+
+---
+
+## git blame
+**Purpose:**  
+Displays who last modified each line of a file along with the commit information.
+
+### Syntax
+```bash
+git blame <file_name>
+```
+
+### Example
+```bash
+git blame index.html
+```
+## git reflog
+**Purpose:**  
+Shows a log of all recent actions performed in the repository such as commits, resets, and checkouts.
+
+### Syntax
+```bash
+git reflog
+```
+
+### Example
+```bash
+git reflog
+```
+
+
+## git shortlog
+**Purpose:**  
+Summarizes commit history grouped by author.
+
+### Syntax
+```bash
+git shortlog
+```
+
+### Example
+```bash
+git shortlog
+```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/ad86720a-a036-466e-9409-be236125aa4c)
+
+# File Tracking Commands
+## git add
+**Purpose:**  
+Adds specific files to the staging area before committing.
+### Syntax
+```bash
+git add <file_name>
+```
+### Example
+```bash
+git add index.html
+```
+---
+## git add .
+**Purpose:**  
+Adds all modified and new files in the current directory to the staging area.
+### Syntax
+```bash
+git add .
+```
+### Example
+```bash
+git add .
+```
+---
+## git add -p
+**Purpose:**  
+Allows you to stage changes interactively by selecting specific parts of a file.
+### Syntax
+```bash
+git add -p
+```
+### Example
+```bash
+git add -p app.js
+```
+---
+## git restore
+**Purpose:**  
+Restores a file in the working directory to the last committed state.
+### Syntax
+```bash
+git restore <file_name>
+```
+### Example
+```bash
+git restore index.html
+```
+---
+## git restore --staged
+**Purpose:**  
+Removes a file from the staging area but keeps the changes in the working directory.
+### Syntax
+```bash
+git restore --staged <file_name>
+```
+### Example
+```bash
+git restore --staged app.js
+```
+---
+## git rm
+**Purpose:**  
+Removes a file from both the working directory and the Git repository.
+### Syntax
+```bash
+git rm <file_name>
+```
+### Example
+```bash
+git rm old_file.txt
+```
+---
+## git mv
+**Purpose:**  
+Moves or renames a file and stages the change automatically.
+### Syntax
+```bash
+git mv <old_name> <new_name>
+```
+### Example
+```bash
+git mv old_name.txt new_name.txt
+```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/a8bb5de5-be43-448c-b6bc-75bfab381585)
+
+
+
+
