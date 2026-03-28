@@ -410,7 +410,7 @@ git commit --no-edit
 git add .
 git commit --no-edit
 ```
-## Scrrenshot
+## Screenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/5ad7de52-928f-468a-a4e0-df71a18fc3bb)
 
 # Branch Management Commands
@@ -458,7 +458,7 @@ git branch -d <branch-name>
 
 ### Example  
 ```bash
-git branch -d feature-login
+git branch -d first_branch
 ```
 
 ---
@@ -474,7 +474,7 @@ git branch -D <branch-name>
 
 ### Example  
 ```bash
-git branch -D feature-login
+git branch -D new_branch
 ```
 
 ---
@@ -485,12 +485,12 @@ Switches to an existing branch
 
 ### Syntax  
 ```bash
-git checkout <branch-name>
+git checkout <branch-name
 ```
 
 ### Example  
 ```bash
-git checkout develop
+git checkout new2
 ```
 
 ---
@@ -506,7 +506,7 @@ git checkout -b <branch-name>
 
 ### Example  
 ```bash
-git checkout -b feature-payment
+git checkout -b new3
 ```
 
 ---
@@ -538,7 +538,10 @@ git switch -c <branch-name>
 
 ### Example  
 ```bash
-git switch -c feature-auth
+git switch -c new4
 ```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/47b6d272-5826-475e-824d-0d5ebff77b19)
 
+<img width="1366" height="768" alt="Screenshot from 2026-03-28 20-36-31" src="https://github.com/user-attachments/assets/47b6d272-5826-475e-824d-0d5ebff77b19" />
 
