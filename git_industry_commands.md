@@ -413,5 +413,132 @@ git commit --no-edit
 ## Scrrenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/5ad7de52-928f-468a-a4e0-df71a18fc3bb)
 
+# Branch Management Commands
+
+## git branch  
+**Purpose:**  
+Lists all local branches in the repository  
+
+### Syntax  
+```bash
+git branch
+```
+
+### Example  
+```bash
+git branch
+```
+
+---
+
+## git branch -a  
+**Purpose:**  
+Lists all branches (local + remote)  
+
+### Syntax  
+```bash
+git branch -a
+```
+
+### Example  
+```bash
+git branch -a
+```
+
+---
+
+## git branch -d  
+**Purpose:**  
+Deletes a branch safely (only if it is already merged)  
+
+### Syntax  
+```bash
+git branch -d <branch-name>
+```
+
+### Example  
+```bash
+git branch -d feature-login
+```
+
+---
+
+## git branch -D  
+**Purpose:**  
+Force deletes a branch (even if it is not merged)  
+
+### Syntax  
+```bash
+git branch -D <branch-name>
+```
+
+### Example  
+```bash
+git branch -D feature-login
+```
+
+---
+
+## git checkout  
+**Purpose:**  
+Switches to an existing branch  
+
+### Syntax  
+```bash
+git checkout <branch-name>
+```
+
+### Example  
+```bash
+git checkout develop
+```
+
+---
+
+## git checkout -b  
+**Purpose:**  
+Creates a new branch and switches to it immediately  
+
+### Syntax  
+```bash
+git checkout -b <branch-name>
+```
+
+### Example  
+```bash
+git checkout -b feature-payment
+```
+
+---
+
+## git switch  
+**Purpose:**  
+Switches between branches (modern replacement for checkout)  
+
+### Syntax  
+```bash
+git switch <branch-name>
+```
+
+### Example  
+```bash
+git switch main
+```
+
+---
+
+## git switch -c  
+**Purpose:**  
+Creates a new branch and switches to it (modern alternative to checkout -b)  
+
+### Syntax  
+```bash
+git switch -c <branch-name>
+```
+
+### Example  
+```bash
+git switch -c feature-auth
+```
 
 
