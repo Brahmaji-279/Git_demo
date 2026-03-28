@@ -413,6 +413,5 @@ git commit --no-edit
 ## Scrrenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/5ad7de52-928f-468a-a4e0-df71a18fc3bb)
 
-<img width="1366" height="768" alt="Screenshot from 2026-03-28 18-54-49" src="https://github.com/user-attachments/assets/5ad7de52-928f-468a-a4e0-df71a18fc3bb" />
 
 
