@@ -543,4 +543,34 @@ git switch -c new4
 ## Screenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/47b6d272-5826-475e-824d-0d5ebff77b19)
 
+#  Merge & Integration Commands
+## git merge  
+**Purpose:**  
+Combines changes from one branch into the current branch  
+
+### Syntax  
+```bash
+git merge <branch-name>
+```
+
+### Example  
+```bash
+git checkout main
+git merge feature-login
+```
+## git merge --no-ff  
+**Purpose:**  
+Merges a branch while preserving a separate merge commit (no fast-forward)  
+### Syntax  
+```bash
+git merge --no-ff <branch-name>
+```
+### Example  
+```bash
+git checkout main
+git merge --no-ff feature-login
+```
+## screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/12fe4245-e259-4918-a971-240cb481ee25)
+
 
