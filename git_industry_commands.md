@@ -734,7 +734,7 @@ git rebase <branch-name>
 ```
 ### Example  
 ```bash
-git checkout feature-login
+git checkout new4
 git rebase main
 ```
 ## git rebase -i  
@@ -770,4 +770,6 @@ git rebase --abort
 ```bash
 git rebase --abort
 ```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/b895f1ad-9b17-46c0-842d-5750ac6db797)
 
