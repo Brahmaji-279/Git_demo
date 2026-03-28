@@ -364,6 +364,55 @@ git mv old_name.txt new_name.txt
 ## Screenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/a8bb5de5-be43-448c-b6bc-75bfab381585)
 
+# Commit commands
+## git commit 
+**Purpose:**
+Commits a specific message for the changes it opens a window to enter the commit
+### Syntax 
+```bash
+git commit 
+```
+### Example 
+```bash
+git commit
+```
+## git commit -m 
+**Purpose:**
+Enters the commit message within the command
+### Syntax
+```bash
+git commit -m <text as commit>
+```
+### Example 
+```bash
+git commit -m "Some files are added"
+```
+## git commit --amend
+**Purspose:**
+Reviews the last commit using a window to edit last commit
+### Syntax 
+```bash
+git commit --amend
+```
+### Example 
+```bash
+git commit --amend
+```
+## git commit --no-edit
+**Purpose:**
+Used to add more files without changing the before commit 
+## Syntax
+```bash
+git commit --no-edit
+```
+## Example
+```bash
+git add .
+git commit --no-edit
+```
+## Scrrenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/5ad7de52-928f-468a-a4e0-df71a18fc3bb)
 
+<img width="1366" height="768" alt="Screenshot from 2026-03-28 18-54-49" src="https://github.com/user-attachments/assets/5ad7de52-928f-468a-a4e0-df71a18fc3bb" />
 
 
