@@ -772,4 +772,179 @@ git rebase --abort
 ```
 ## Screenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/b895f1ad-9b17-46c0-842d-5750ac6db797)
-
+# Cherry Pick & Patch Commands
+## git cherry-pick  
+**Purpose:**  
+Applies a specific commit from one branch to another  
+### Syntax  
+```bash
+git cherry-pick <commit-hash>
+```
+### Example  
+```bash
+git checkout main
+git cherry-pick a1b2c3d
+```
+## git format-patch  
+**Purpose:**  
+Creates patch files from commits for sharing changes  
+### Syntax  
+```bash
+git format-patch <commit>
+```
+### Example  
+```bash
+git format-patch HEAD~2
+```
+## git apply  
+**Purpose:**  
+Applies a patch file to the working directory (no commit created)  
+### Syntax  
+```bash
+git apply <patch-file>
+```
+### Example  
+```bash
+git apply 0001-fix-login.patch
+```
+## git am  
+**Purpose:**  
+Applies patch files and creates commits from them  
+### Syntax  
+```bash
+git am <patch-file>
+```
+### Example  
+```bash
+git am 0001-fix-login.patch
+```
+# Tagging Commands
+## git tag  
+**Purpose:**  
+Lists all tags in the repository  
+### Syntax  
+```bash
+git tag
+```
+### Example  
+```bash
+git tag
+```
+## git tag -a  
+**Purpose:**  
+Creates an annotated tag with a message  
+### Syntax  
+```bash
+git tag -a <tag-name> -m "message"
+```
+### Example  
+```bash
+git tag -a v1.0 -m "Initial release"
+```
+## git tag -d  
+**Purpose:**  
+Deletes a tag locally  
+### Syntax  
+```bash
+git tag -d <tag-name>
+```
+### Example  
+```bash
+git tag -d v1.0
+```
+## git push origin --tags  
+**Purpose:**  
+Pushes all local tags to the remote repository  
+### Syntax  
+```bash
+git push origin --tags
+```
+### Example  
+```bash
+git push origin --tags
+```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/b315fcfa-aaeb-45df-bd83-525eca587c06)
+# Submodule Commands
+## git submodule add  
+**Purpose:**  
+Adds another Git repository as a submodule inside your project  
+### Syntax  
+```bash
+git submodule add <repository-url>
+```
+### Example  
+```bash
+git submodule add https://github.com/user/library.git
+```
+## git submodule init  
+**Purpose:**  
+Initializes submodules (sets up configuration locally)  
+### Syntax  
+```bash
+git submodule init
+```
+### Example  
+```bash
+git submodule init
+```
+## git submodule update  
+**Purpose:**  
+Fetches and checks out the correct version of submodules  
+### Syntax  
+```bash
+git submodule update
+```
+### Example  
+```bash
+git submodule update
+```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/b0da09af-35aa-4ba5-bb8b-7c7e04adfb26)
+# Debugging Commands
+## git bisect  
+**Purpose:**  
+Helps find the commit that introduced a bug using binary search  
+### Syntax  
+```bash
+git bisect
+```
+### Example  
+```bash
+git bisect
+```
+## git bisect start  
+**Purpose:**  
+Starts the bisect process  
+### Syntax  
+```bash
+git bisect start
+```
+### Example  
+```bash
+git bisect start
+```
+## git bisect good  
+**Purpose:**  
+Marks a commit as good (no bug present)  
+### Syntax  
+```bash
+git bisect good <commit>
+```
+### Example  
+```bash
+git bisect good a1b2c3d
+```
+## git bisect bad  
+**Purpose:**  
+Marks a commit as bad (bug present)  
+### Syntax  
+```bash
+git bisect bad <commit>
+```
+### Example  
+```bash
+git bisect bad HEAD
+```
+## Screenshot
+![Git Demo Screenshot](https://github.com/user-attachments/assets/04760693-364c-462f-8615-5dec22d9bf67)
