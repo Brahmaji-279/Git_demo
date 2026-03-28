@@ -556,7 +556,7 @@ git merge <branch-name>
 ### Example  
 ```bash
 git checkout main
-git merge feature-login
+git merge new4
 ```
 ## git merge --no-ff  
 **Purpose:**  
@@ -568,9 +568,177 @@ git merge --no-ff <branch-name>
 ### Example  
 ```bash
 git checkout main
-git merge --no-ff feature-login
+git merge --no-ff new4
 ```
 ## screenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/12fe4245-e259-4918-a971-240cb481ee25)
 
+# Remote Repository Commands
 
+## git remote  
+**Purpose:**  
+Shows the list of remote repositories linked to your project  
+
+### Syntax  
+```bash
+git remote
+```
+
+### Example  
+```bash
+git remote
+```
+
+---
+
+## git remote -v  
+**Purpose:**  
+Displays remote repositories with their URLs  
+
+### Syntax  
+```bash
+git remote -v
+```
+
+### Example  
+```bash
+git remote -v
+```
+
+---
+
+## git remote add  
+**Purpose:**  
+Adds a new remote repository  
+
+### Syntax  
+```bash
+git remote add <name> <url>
+```
+
+### Example  
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+
+---
+
+## git remote remove  
+**Purpose:**  
+Removes an existing remote repository  
+
+### Syntax  
+```bash
+git remote remove <name>
+```
+
+### Example  
+```bash
+git remote remove origin
+```
+
+---
+
+## git fetch  
+**Purpose:**  
+Downloads changes from the remote without merging  
+
+### Syntax  
+```bash
+git fetch
+```
+
+### Example  
+```bash
+git fetch
+```
+
+---
+
+## git fetch --all  
+**Purpose:**  
+Fetches updates from all remotes  
+
+### Syntax  
+```bash
+git fetch --all
+```
+
+### Example  
+```bash
+git fetch --all
+```
+
+---
+
+## git pull  
+**Purpose:**  
+Fetches and merges changes from the remote repository  
+
+### Syntax  
+```bash
+git pull <remote> <branch>
+```
+
+### Example  
+```bash
+git pull origin main
+```
+
+---
+
+## git pull --rebase  
+**Purpose:**  
+Fetches changes and rebases your commits on top of them  
+
+### Syntax  
+```bash
+git pull --rebase <remote> <branch>
+```
+
+### Example  
+```bash
+git pull --rebase origin main
+```
+
+---
+
+## git push  
+**Purpose:**  
+Uploads local commits to the remote repository  
+
+### Syntax  
+```bash
+git push <remote> <branch>
+```
+
+### Example  
+```bash
+git push origin main
+```
+## git push -u origin <branch-name>  
+**Purpose:**  
+Pushes the branch and sets upstream tracking  
+
+### Syntax  
+```bash
+git push -u origin <branch-name>
+```
+
+### Example  
+```bash
+git push -u origin feature-login
+```
+## git push --force  
+**Purpose:**  
+Force pushes changes (overwrites remote history)  
+
+### Syntax  
+```bash
+git push --force
+```
+
+### Example  
+```bash
+git push --force
+```
