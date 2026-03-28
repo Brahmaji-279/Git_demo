@@ -543,5 +543,4 @@ git switch -c new4
 ## Screenshot
 ![Git Demo Screenshot](https://github.com/user-attachments/assets/47b6d272-5826-475e-824d-0d5ebff77b19)
 
-<img width="1366" height="768" alt="Screenshot from 2026-03-28 20-36-31" src="https://github.com/user-attachments/assets/47b6d272-5826-475e-824d-0d5ebff77b19" />
 
